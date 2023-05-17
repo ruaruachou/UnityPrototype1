@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18028468, g: 0.22571495, b: 0.30692354, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028434, g: 0.22571453, b: 0.30692297, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -271,6 +271,14 @@ PrefabInstance:
     - target: {fileID: 400046, guid: 814f4326a50812947b2469896d89a215, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478292833, guid: 814f4326a50812947b2469896d89a215, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 478292833, guid: 814f4326a50812947b2469896d89a215, type: 3}
+      propertyPath: xRange
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 478292833, guid: 814f4326a50812947b2469896d89a215, type: 3}
       propertyPath: projectilePrefab
@@ -561,8 +569,10 @@ MonoBehaviour:
   - {fileID: 3362608762751746303, guid: e93fff732b9bc804eb58adf8a7fc360c, type: 3}
   - {fileID: 2638059845220235679, guid: cef264ba3b0dd124484267eaf1483428, type: 3}
   - {fileID: 1340263237296650214, guid: 66c64cba4b83b3447a1ab046db58ab18, type: 3}
-  spawnPosX: 20
+  spawnPosX: 15
   spawnPoxZ: 20
+  spawnDelay: 2
+  spawnInterval: 1.5
 --- !u!4 &700205483
 Transform:
   m_ObjectHideFlags: 0
