@@ -21,8 +21,12 @@ public class PlayerController : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+
+        //玩家上下左右移动
         transform.Translate(Vector3.right * speed * horizontalInput * Time.deltaTime);
         transform.Translate(Vector3.forward * speed * verticalInput * Time.deltaTime);
+
+        //控制玩家边界
         if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
